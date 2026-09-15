@@ -6,9 +6,8 @@ st.title("Especialización Python for Analytics")
 st.sidebar.title("Parámetros")
 st.write("Elaborado por: Luis Vidal")
 
-st.image("Python_logo.png",width =300)
-st.sidebar.image("DMC.png")
-
+st.image("Image20260908221600.png", with = 300)
+st.sidebar.image("Image20260908221553.png")
 
 modulos = st.sidebar.selectbox("Selecione el módulo",["Listas", "Arreglos", "Funciones", "POO"])
 
@@ -25,11 +24,10 @@ if modulos == "Listas":
 elif modulos == "Arreglos":
   st.write("Te encuentras en el módulo de arreglos")
 
-  cantidad = st.slider("Seleccione un valor del rango", min_value = 1, max_value = 100, value=20 )
+  cantidad = st.slider("Seleccione un valor del rango", min_value = 1, max_value = 100, value = 20)
   arreglo = np.arange(cantidad)
 
   st.write(arreglo)
-
 
 elif modulos == "Funciones":
   st.write("Te encuentras en el módulo de Funciones")
@@ -40,7 +38,7 @@ elif modulos == "Funciones":
 
   resultado_valor_futuro = lf.valor_futuro_inversion(capital_i ,aporte_m,tasa_a,anios)
   st.write("El resultados de tu valor futuro de inversión es: ",round(resultado_valor_futuro,2))
-  
+
 else:
   st.write("Te encuentras en el módulo de POO")
   
